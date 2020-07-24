@@ -27,10 +27,13 @@
         font-family: inherit;
         outline: none;
     }
+    i{
+        font-style: normal;
+    }
 
 
     .header{
-        height: 196px;
+        height: 617px;
     }
     .header .top{
         height: 30px;
@@ -249,6 +252,7 @@
     }
     .header .middle .ban2 .address:hover ul{
         display: block;
+        z-index: 5;
     }
     .header .middle .ban2 .search{
         display: inline-block;
@@ -264,6 +268,7 @@
         padding-left: 30px;
         font-size: 0.75em;
         color: black;
+        z-index: 10;
     }
     .header .middle .ban2 .search .product{
         width: 80px;
@@ -300,6 +305,7 @@
         background-color: #FF8200;
     }
     .header .under .ban3{
+        float: left;
         width: 1200px;
         height: 45px;
         margin-left: 351.5px;
@@ -307,10 +313,215 @@
     }
     .header .under .ban3 .service a{
         display: inline-block;
-        background: url(images/189-index.png) no-repeat -224px -659px;
+        background: url(images/189-index.png) no-repeat -224px -716px;
         vertical-align: middle;
         width: 190px;
         height: 45px;
+    }
+    .header .under .ban3 .service{
+        float: left;
+    }
+    .header .under .ban3 .service,
+    .header .under .ban3 .bar{
+        display: inline-block;
+    }
+    .header .under .ban3 .bar{
+        overflow: hidden;
+        margin-left: 30px;
+    }
+    .header .under .ban3 .bar ul li{
+        float: left;
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        width: 120px;
+        line-height: 45px;
+    }
+    .header .under .ban3 .bar ul li a i{
+        display: inline-block;
+        width: 8px;
+        height: 18px;
+        vertical-align: middle;
+        background: url(images/189-index.png) no-repeat -238px -537px;
+        display: none;
+    }
+    .header .under .ban3 .bar ul li a.active i{
+        display: inline-block;
+    }
+    .header .under .ban3 .bar ul li a:hover i{
+        display: inline-block;
+    }
+    .header .under .ban3 > a{
+        height: 45px;
+        line-height: 45px;
+        float: right;
+        font-size: 13.6px;
+        color: white;
+    }
+    .header .under .ban3 > a:hover{
+        text-decoration: underline;
+    }
+    .header .under .ban3 > a i{
+        display: inline-block;
+        width: 20px;
+        height: 18px;
+        vertical-align: middle;
+        background: url(images/189-index.png) no-repeat -230px -188px;
+        padding-right: 4px;
+    }
+
+
+    .header .rotation{
+        width: 100%;
+        height: 421px;
+        background: url(images/scro1.jpg) no-repeat;
+    }
+    .header .rotation .rota{
+        width: 1200px;
+        height: 421px;
+    }
+    .header .rotation .rota .menu{
+        width: 190px;
+        height: 420px;
+        margin-left: 351.5px;
+        margin-right: 351.5px;
+        background-color: white;
+    }
+    .header .rotation .rota .menu ul li{
+        width: 188px;
+        height: 59px;
+        line-height: 59px;
+        font-size: 14px;
+        color: #777777;
+        /* padding-left: 60px; */
+        background-color: #FAFAFA;
+        border-bottom: 1px solid #e8e8e8;
+        border-left: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+    }
+    .header .rotation .rota .menu ul li i{
+        display: inline-block;
+        background: url(images/189-index.png) no-repeat;
+        vertical-align: middle;
+    }
+    .header .rotation .rota .menu ul li i.buy{
+        width: 40px;
+        height: 41px;
+        background-position: -15px -49px;
+        margin-left: 10px;
+        padding-right: 15px;
+    }
+    .header .rotation .rota .menu ul li i.choose{
+        width: 40px;
+        height: 41px;
+        background-position: -10px -159px;
+        margin-left: 10px;
+        padding-right: 15px;
+    }
+    .header .rotation .rota .menu ul li i.pretend{
+        width: 40px;
+        height: 41px;
+        background-position: -10px -271px;
+        margin-left: 10px;
+        padding-right: 15px;
+    }
+    .header .rotation .rota .menu ul li i.enjoy{
+        width: 40px;
+        height: 41px;
+        background-position: -10px -382px;
+        margin-left: 10px;
+        padding-right: 15px;
+    }
+    .header .rotation .rota .menu ul li i.charge{
+        width: 40px;
+        height: 41px;
+        background-position: -10px -493px;
+        margin-left: 10px;
+        padding-right: 15px;
+    }
+    .header .rotation .rota .menu ul li i.check{
+        width: 40px;
+        height: 41px;
+        background-position: -10px -603px;
+        margin-left: 10px;
+        padding-right: 15px;
+    }
+    .header .rotation .rota .menu ul li i.rightpull1{
+        width: 10px;
+        height: 15px;
+        background-position: -177px -65px;
+        margin-left: 43px;
+    }
+    .header .rotation .rota .menu ul li i.rightpull2{
+        width: 10px;
+        height: 15px;
+        background-position: -177px -65px;
+        margin-left: 76px;
+    }
+
+    .header .rotation .roat .intro{
+        width: 224px;
+        height: 409px;
+    }
+
+
+    .main{
+        width: 100%;
+        height: auto;
+    }
+    .main .content{
+        width: 1200px;
+        height: auto;
+        margin-left: 351.5px;
+        margin-right: 351.5px;
+        margin-top: 30px;
+    }
+    .main .content .card ul{
+        float: right;
+    }
+    .main .content .card{
+        overflow: hidden;
+    }
+    .main .content .card ul li div{
+        width: 1010px;
+        height: 110px;
+    }
+    .main .content .card ul li .img1{
+        margin-bottom: 2px;
+    }
+    .main .content .card ul li a{
+        margin-left: 2px;
+    }
+    .main .content .card ul li a.first{
+        margin-left: 0;
+    }
+    .main .content .geek{
+        width: 1200px;
+        height: 420px;
+        margin-top: 30px;
+    }
+    .main .content .geek .leftbox{
+        width: 190px;
+        height: 420px;
+    }
+    .main .content .geek .leftbox .topbox{
+        width: 190px;
+        height: 100px;
+        background-color: #FFBA24;
+        font-size: 0.75em;
+        color: white;
+    }
+    .main .content .geek .leftbox .topbox p.small{
+        display: inline-block;
+        width: 90px;
+        height: 80px;
+    }
+    .main .content .geek .leftbox .topbox i{
+        display: inline-block;
+        width: 1px;
+        height: 91px;
+        vertical-align: middle;
+        background: url(images/189-index.png) no-repeat -398px -201px;
     }
 
 
@@ -408,26 +619,179 @@
                 </span>
                 <form class="search">
                     <div class="product">搜产品</div>
-                    <input type="text" value="加副卡"><button>搜索</button>
+                    <input type="text" placeholder="加副卡"><button>搜索</button>
                 </form>
                 <p class="star"><a href="#"><img src="images/star.jpg"></a></p>
             </div>
         </div>
         <div class="under">
             <div class="ban3">
-                <p class="service">
+                <div class="service">
                     <a href="#"></a>
-                </p>
+                </div>
+                <div class="bar">
+                    <ul>
+                        <li><a href="#" class="active"><i class="cursor"></i>首页</a></li>
+                        <li><a href="#"><i class="cursor"></i>流量</a></li>
+                        <li><a href="#"><i class="cursor"></i>宽度光纤</a></li>
+                        <li><a href="#"><i class="cursor"></i>老用户</a></li>
+                        <li><a href="#"><i class="cursor"></i>自助服务</a></li>
+                        <li><a href="#"><i class="cursor"></i>资费专区</a></li>
+                        <li><a href="#"><i class="cursor"></i>服务监督</a></li>
+                    </ul>
+                </div>
+                <a href="#"><i></i>登录</a>
+            </div>
+        </div>
+        <div class="rotation">
+            <div class="rota">
+                <div class="menu">
+                    <ul>
+                        <li><i class="buy"></i><a>套餐</a>/<a>靓号</a><i class="rightpull1"></i></li>
+                        <!-- <div>
+                            <dl>
+                                <dt>号码</dt>
+                                <dd>
+                                    <p>
+                                        <a>191</a>
+                                        <i>|</i>
+                                        <a>199</a>
+                                        <i>|</i>
+                                        <a>173</a>
+                                        <i>|</i>
+                                        <a>189</a>
+                                        <i>|</i>
+                                        <a>177</a>
+                                        <i>|</i>
+                                        <a>181</a>
+                                        <i>|</i>
+                                        <a>180</a>
+                                        <i>|</i>
+                                        <a>133</a>
+                                        <i>|</i>
+                                        <a>153</a>
+                                        <i>|</i>
+                                    </p>
+                                </dd>
+                                
+                            </dl>
+                            <dl>
+                                <dt>套餐</dt>
+                                <dd>
+                                    <p>
+                                        <a>【传递爱心❤电信先行】</a>
+                                        <a>扶贫专属套餐</a>
+                                        <i>|</i>
+                                        <a>助残优惠套餐new~</a>
+                                        <i>|</i>
+                                    </p>
+                                </dd>
+                                <dd>
+                                    <p>
+                                        <a href="">【全能副卡】</a>
+                                        <a href="">一个套餐全家享，与家人共享语音流量</a>
+                                        <i>|</i>
+                                    </p>
+                                </dd>
+                                <dd>
+                                    <p>
+                                        <a href="">【星卡畅游版】</a>
+                                        <a href="">200GB定向免流+1元/GB/天 首月体验~</a>
+                                        <i>|</i>
+                                    </p>
+                                </dd>
+                                <dd>
+                                    <p>
+                                        <a href="">【亲情卡】</a>
+                                        <a href="">3GB流量+100分钟语音+亲情互打免费 new~</a>
+                                        <i>|</i>
+                                    </p>
+                                </dd>
+                                <dd>
+                                    <p>
+                                        <a href="">【5G畅享套餐】</a>
+                                        <a href="">169元/月 40GB流量+800分钟语音+300Mbps宽带+超清ITV</a>
+                                        <i>|</i>
+                                    </p>
+                                </dd>
+                                <dd>
+                                    <p>
+                                        <a href="">【5G畅享套餐】</a>
+                                        <a href="">199元/月 60GB流量+1000分钟语音+300Mbps宽带+超清ITV</a>
+                                        <i>|</i>
+                                    </p>
+                                </dd>
+                                <dd>
+                                    <p>
+                                        <a href=""></a>
+                                    </p>
+                                </dd>   
+                            </dl>
+                            <dl>
+                                <dt>号码类型</dt>
+                                <dd>
+                                    <p>
+                                        <a href="">0元靓号</a>
+                                        <i>|</i>
+                                        <a href="">事业靓号</a>
+                                        <i>|</i>
+                                        <a href="">爱情靓号</a>
+                                        <i>|</i>
+                                        <a href="">精选靓号</a>
+                                        <i>|</i>
+                                        <a href="">199靓号</a>
+                                        <i>|</i>
+                                        <a href="">177靓号</a>
+                                        <i>|</i>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div> -->
+
+                        <li><i class="choose"></i><a>宽带<i class="rightpull2"></i></a></li>
+                        <li><i class="pretend"></i><a>智能<i class="rightpull2"></i></a></li>
+                        <li><i class="enjoy"></i><a>话费<i class="rightpull2"></i></a></li>
+                        <li><i class="charge"></i><a>费用<i class="rightpull2"></i></a></li>
+                        <li><i class="check"></i><a>业务<i class="rightpull2"></i></a></li>
+                    </ul>
+                </div>
+                <div class="intro">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="content">
+            <div class="card">
+                <span>
+                    <img src="images/huawei.jpg">
+                </span>
                 <ul>
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">流量</a></li>
-                    <li><a href="#">宽度光纤</a></li>
-                    <li><a href="#">老用户</a></li>
-                    <li><a href="#">自助服务</a></li>
-                    <li><a href="#">资费专区</a></li>
-                    <li><a href="#">服务监督</a></li>
+                    <li>
+                        <div class="img1">
+                            <a href="#" class="first"><img src="images/star1.jpg"></a><a href="#"><img src="images/star2.jpg"></a><a href="#"><img src="images/star3.jpg"></a><a href="#"><img src="images/star4.jpg"></a>
+                        </div>
+                        <div class="img2">
+                            <a href="#" class="first"><img src="images/star5.jpg"></a><a href="#"><img src="images/star6.jpg"></a><a href="#"><img src="images/star7.jpg"></a><a href="#"><img src="images/star8.jpg"></a>
+                        </div>
+                    </li>    
                 </ul>
             </div>
+            <div class="geek">
+                <div class="leftbox">
+                    <div class="topbox">
+                        <p class="small"><a href="#"><img src="images/5g.png">5G套餐</a></p>
+                        <i></i>
+                        <p class="small"><a href="#"><img src="images/tehui.png">特惠宽带</a></p>
+                    </div>
+                    <div class="footbox">
+                    </div>
+                </div>
+            </div>
+            <div class="happy"></div>
+            <div class="business"></div>
         </div>
     </div>
 </body>
