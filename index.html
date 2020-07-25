@@ -10,7 +10,8 @@
         margin: 0;
     }
     p{
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     a{
         text-decoration: none;
@@ -29,6 +30,13 @@
     }
     i{
         font-style: normal;
+    }
+    dl{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    dd{
+        margin-left: 0;
     }
 
 
@@ -257,7 +265,7 @@
     .header .middle .ban2 .search{
         display: inline-block;
         position: absolute;
-        bottom: 40px;
+        bottom: 12px;
         margin-left: 20px;
     }
     .header .middle .ban2 .search input{
@@ -291,6 +299,24 @@
         border: 2px solid #FF8200;
         background-color: #FF8200;
         cursor: pointer;
+    }
+    .header .middle .ban2 .search .hot{
+        font-size: 0.75em;
+        color: #9b9b9b;
+        margin-top: 5px;
+        padding: 2px 2px 0 2px;
+    }
+    .header .middle .ban2 .search .hot > a{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .header .middle .ban2 .search .hot .hot_blue{
+        color: blue;
+        font-weight: bold;
+    }
+    .header .middle .ban2 .search .hot .hot_red{
+        color: red;
+        font-weight: bold;
     }
     .header .middle .ban2 .star{
         display: inline-block;
@@ -345,9 +371,7 @@
         background: url(images/189-index.png) no-repeat -238px -537px;
         display: none;
     }
-    .header .under .ban3 .bar ul li a.active i{
-        display: inline-block;
-    }
+    .header .under .ban3 .bar ul li a.active i,
     .header .under .ban3 .bar ul li a:hover i{
         display: inline-block;
     }
@@ -393,7 +417,6 @@
         line-height: 59px;
         font-size: 14px;
         color: #777777;
-        /* padding-left: 60px; */
         background-color: #FAFAFA;
         border-bottom: 1px solid #e8e8e8;
         border-left: 1px solid #e8e8e8;
@@ -458,6 +481,329 @@
         background-position: -177px -65px;
         margin-left: 76px;
     }
+    .header .rotation .rota .menu ul li{
+        position: relative;
+    }
+    .header .rotation .rota .menu ul li .submenu1{
+        display: none;
+        width: 600px;
+        height: 481px;
+        border: 1px solid #dbdbdb;
+        background-color: white;
+        box-shadow: #ccc 4px 2px 3px;
+        z-index: 999;
+        position: absolute;
+        left: 188px;
+        top: 0;
+        padding-left: 20px;
+        padding-bottom: 17px;
+        font-size: 12px;
+        color: #777;
+    }
+    .header .rotation .rota .menu ul li:hover{
+        background-color: white;
+    }
+    .header .rotation .rota .menu ul li:hover i.rightpull1{
+        display: none;
+    }
+    .header .rotation .rota .menu ul li:hover i.rightpull2{
+        display: none;
+    }
+    .header .rotation .rota .menu ul li:hover .submenu1{
+        display: block;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .red{
+        color: red;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .purple{
+        color: purple;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .green{
+        color: green;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .blue{
+        color: blue;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .orange{
+        color: orange;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .black{
+        color: black;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .blod{
+        font-weight: bold;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .line{
+        margin-left: 4px;
+        margin-right: 4px;
+        color: #D2D2D2;
+    }
+    .header .rotation .rota .menu ul li .submenu1 dl{
+        border-bottom: 1px solid #F3F3F3;
+        overflow: hidden;
+    }
+    .header .rotation .rota .menu ul li .submenu1 dl.noborder{
+        border-bottom: none;
+    }
+    .header .rotation .rota .menu ul li .submenu1 dt,
+    .header .rotation .rota .menu ul li .submenu1 dd{
+        line-height: 2.4;
+        float: left;
+        padding: 8px 0;
+    }
+    .header .rotation .rota .menu ul li .submenu1 dt{
+        width: 80px;
+        font-weight: bold;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .meal{
+        line-height: 2.4;
+    }
+    .header .rotation .rota .menu ul li .submenu1 a:hover .change,
+    .header .rotation .rota .menu ul li .submenu1 .meal a:hover .change{
+        color: orange;
+    }
+    .header .rotation .rota .menu ul li .submenu1 .police{
+        padding-top: 8px;
+    }
+    .header .rotation .rota .menu ul li .submenu2{
+        display: none;
+        width: 600px;
+        height: 563px;
+        border: 1px solid #dbdbdb;
+        background-color: white;
+        box-shadow: #ccc 4px 2px 3px;
+        z-index: 999;
+        position: absolute;
+        left: 188px;
+        top: -60px;
+        padding-left: 20px;
+        padding-bottom: 17px;
+        font-size: 12px;
+        color: #777;
+        font-weight: bold;
+    }
+    .header .rotation .rota .menu ul li:hover .submenu2{
+        display: block;
+    }
+    .header .rotation .rota .menu ul li .submenu2 .red{
+        color: red;
+    }
+    .header .rotation .rota .menu ul li .submenu2 .green{
+        color: green;
+    }
+    .header .rotation .rota .menu ul li .submenu2 .black{
+        color: black;
+    }
+    .header .rotation .rota .menu ul li .submenu2 .line{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #D2D2D2;
+    }
+    .header .rotation .rota .menu ul li .submenu2 .line_more{
+        margin-left: 200px;
+        margin-right: 10px;
+        color: #D2D2D2;
+
+    }
+    .header .rotation .rota .menu ul li .submenu2 dl{
+        border-bottom: 1px solid #F3F3F3;
+        overflow: hidden;
+    }
+    .header .rotation .rota .menu ul li .submenu2 dl.noborder{
+        border-bottom: none;
+    }
+    .header .rotation .rota .menu ul li .submenu2 dt,
+    .header .rotation .rota .menu ul li .submenu2 dd{
+        line-height: 2.4;
+        float: left;
+        padding: 8px 0;
+    }
+    .header .rotation .rota .menu ul li .submenu2 dt{
+        width: 80px;
+    }
+    .header .rotation .rota .menu ul li .submenu2 a:hover .change{
+        color: orange;
+    }
+    .header .rotation .rota .menu ul li .submenu3{
+        display: none;
+        width: 600px;
+        height: 401px;
+        border: 1px solid #dbdbdb;
+        background-color: white;
+        box-shadow: #ccc 4px 2px 3px;
+        z-index: 999;
+        position: absolute;
+        left: 188px;
+        top: -120px;
+        padding-left: 20px;
+        padding-bottom: 17px;
+        font-size: 12px;
+        color: #777;
+        font-weight: bold;
+    }
+    .header .rotation .rota .menu ul li:hover .submenu3{
+        display: block;
+    }
+    .header .rotation .rota .menu ul li .submenu3 dl{
+        border-bottom: 1px solid #F3F3F3;
+        overflow: hidden;
+    }
+    .header .rotation .rota .menu ul li .submenu3 dl.noborder{
+        border-bottom: none;
+    }
+    .header .rotation .rota .menu ul li .submenu4{
+        display: none;
+        width: 600px;
+        height: 401px;
+        border: 1px solid #dbdbdb;
+        background-color: white;
+        box-shadow: #ccc 4px 2px 3px;
+        z-index: 999;
+        position: absolute;
+        left: 188px;
+        top: -180px;
+        padding-left: 20px;
+        padding-bottom: 17px;
+        font-size: 12px;
+        color: #777;
+        font-weight: bold;
+    }
+    .header .rotation .rota .menu ul li:hover .submenu4{
+        display: block;
+    }
+    .header .rotation .rota .menu ul li .submenu4 .red{
+        color: red;
+    }
+    .header .rotation .rota .menu ul li .submenu4 .line{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #D2D2D2;
+    }
+    .header .rotation .rota .menu ul li .submenu4 dt{
+        width: 80px;
+    }
+    .header .rotation .rota .menu ul li .submenu4 dt,
+    .header .rotation .rota .menu ul li .submenu4 dd{
+        line-height: 2.4;
+        float: left;
+        padding: 8px 0;
+    }
+    .header .rotation .rota .menu ul li .submenu4 a:hover .change{
+        color: orange;
+    }
+    .header .rotation .rota .menu ul li .submenu4 dl{
+        border-bottom: 1px solid #F3F3F3;
+        overflow: hidden;
+    }
+    .header .rotation .rota .menu ul li .submenu4 dl.noborder{
+        border-bottom: none;
+    }
+    .header .rotation .rota .menu ul li .submenu5{
+        display: none;
+        width: 600px;
+        height: 401px;
+        border: 1px solid #dbdbdb;
+        background-color: white;
+        box-shadow: #ccc 4px 2px 3px;
+        z-index: 999;
+        position: absolute;
+        left: 188px;
+        top: -240px;
+        padding-left: 20px;
+        padding-bottom: 17px;
+        font-size: 12px;
+        color: #777;
+        font-weight: bold;
+    }
+    .header .rotation .rota .menu ul li:hover .submenu5{
+        display: block;
+    }
+    .header .rotation .rota .menu ul li .submenu5 .red{
+        color: red;
+    }
+    .header .rotation .rota .menu ul li .submenu5 .blue{
+        color: blue;
+    }
+    .header .rotation .rota .menu ul li .submenu5 .green{
+        color: green;
+    }
+    .header .rotation .rota .menu ul li .submenu5 .line{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #D2D2D2;
+    }
+    .header .rotation .rota .menu ul li .submenu5 dt{
+        width: 80px;
+    }
+    .header .rotation .rota .menu ul li .submenu5 dt,
+    .header .rotation .rota .menu ul li .submenu5 dd{
+        line-height: 2.4;
+        float: left;
+        padding: 8px 0;
+    }
+    .header .rotation .rota .menu ul li .submenu5 a:hover .change{
+        color: orange;
+    }
+    .header .rotation .rota .menu ul li .submenu5 dl{
+        border-bottom: 1px solid #F3F3F3;
+        overflow: hidden;
+    }
+    .header .rotation .rota .menu ul li .submenu5 dl.noborder{
+        border-bottom: none;
+    }
+    .header .rotation .rota .menu ul li .submenu6{
+        display: none;
+        width: 600px;
+        height: 612px;
+        border: 1px solid #dbdbdb;
+        background-color: white;
+        box-shadow: #ccc 4px 2px 3px;
+        z-index: 999;
+        position: absolute;
+        left: 188px;
+        top: -300px;
+        padding-left: 20px;
+        padding-bottom: 17px;
+        font-size: 12px;
+        color: #777;
+        font-weight: bold;
+    }
+    .header .rotation .rota .menu ul li:hover .submenu6{
+        display: block;
+    }
+    .header .rotation .rota .menu ul li .submenu6 .red{
+        color: red;
+    }
+    .header .rotation .rota .menu ul li .submenu6 .black{
+        color: black;
+    }
+    .header .rotation .rota .menu ul li .submenu6 .green{
+        color: green;
+    }
+    .header .rotation .rota .menu ul li .submenu6 .line{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #D2D2D2;
+    }
+    .header .rotation .rota .menu ul li .submenu6 dt{
+        width: 80px;
+    }
+    .header .rotation .rota .menu ul li .submenu6 dt,
+    .header .rotation .rota .menu ul li .submenu6 dd{
+        line-height: 2.4;
+        float: left;
+        padding: 8px 0;
+    }
+    .header .rotation .rota .menu ul li .submenu6 a:hover .change{
+        color: orange;
+    }
+    .header .rotation .rota .menu ul li .submenu6 dl{
+        border-bottom: 1px solid #F3F3F3;
+        overflow: hidden;
+    }
+    .header .rotation .rota .menu ul li .submenu6 dl.noborder{
+        border-bottom: none;
+    }
 
     .header .rotation .roat .intro{
         width: 224px;
@@ -495,10 +841,29 @@
     .main .content .card ul li a.first{
         margin-left: 0;
     }
+
+    .main .content .title_1{
+        width: 1200px;
+        height: 50px;
+        margin-top: 30px;
+        vertical-align: top;
+        position: relative;
+    }
+    .main .content .title_1 > span{
+        font-size: 0.85em;
+        color: #777;
+        font-weight: bold;
+        position: absolute;
+        top: 20px;
+        left: 250px;
+    }
     .main .content .geek{
         width: 1200px;
         height: 420px;
-        margin-top: 30px;
+        overflow: hidden;   
+    }
+    .main .content .geek ul li{
+        float: left;
     }
     .main .content .geek .leftbox{
         width: 190px;
@@ -523,7 +888,42 @@
         vertical-align: middle;
         background: url(images/189-index.png) no-repeat -398px -201px;
     }
-
+    .main .content .geek .leftbox .footbox{
+        width: 190px;
+        height: 320px;
+        background-color: #FEDA60;
+    }
+    .main .content .geek .middlebox{
+        width: 403px;
+        height: 418px;
+    }
+    .main .content .geek .rightbox{
+        width: 606px;
+        height: 418px;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4;
+    }
+    .main .content .geek .rightbox ul.topl li{
+        width: 201px;
+        height: 253px;
+        text-align: center;
+        border-right: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+    }
+    .main .content .geek .rightbox ul.topl li .app{
+        margin-top: 30px;
+    }
+    .main .content .geek .rightbox ul.underl li{
+        width: 201px;
+        height: 164px;
+        text-align: center;
+        border-right: 1px solid #e4e4e4;
+    }
+    .main .content .geek .rightbox ul.underl li .gb{
+        margin-top: 15px;
+    }
+    
 
 </style>
 <body>
@@ -620,6 +1020,10 @@
                 <form class="search">
                     <div class="product">搜产品</div>
                     <input type="text" placeholder="加副卡"><button>搜索</button>
+                    <div class="hot">
+                        <a href="#"><span class="hot_blue">【限时！】</span>200GB定向免流</a>
+                        <a href="#"><span class="hot_red">【hot】</span>天翼副卡、有福全家享</a>
+                    </div>
                 </form>
                 <p class="star"><a href="#"><img src="images/star.jpg"></a></p>
             </div>
@@ -647,112 +1051,197 @@
             <div class="rota">
                 <div class="menu">
                     <ul>
-                        <li><i class="buy"></i><a>套餐</a>/<a>靓号</a><i class="rightpull1"></i></li>
-                        <!-- <div>
-                            <dl>
-                                <dt>号码</dt>
-                                <dd>
-                                    <p>
-                                        <a>191</a>
-                                        <i>|</i>
-                                        <a>199</a>
-                                        <i>|</i>
-                                        <a>173</a>
-                                        <i>|</i>
-                                        <a>189</a>
-                                        <i>|</i>
-                                        <a>177</a>
-                                        <i>|</i>
-                                        <a>181</a>
-                                        <i>|</i>
-                                        <a>180</a>
-                                        <i>|</i>
-                                        <a>133</a>
-                                        <i>|</i>
-                                        <a>153</a>
-                                        <i>|</i>
-                                    </p>
-                                </dd>
-                                
-                            </dl>
-                            <dl>
-                                <dt>套餐</dt>
-                                <dd>
-                                    <p>
-                                        <a>【传递爱心❤电信先行】</a>
-                                        <a>扶贫专属套餐</a>
-                                        <i>|</i>
-                                        <a>助残优惠套餐new~</a>
-                                        <i>|</i>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p>
-                                        <a href="">【全能副卡】</a>
-                                        <a href="">一个套餐全家享，与家人共享语音流量</a>
-                                        <i>|</i>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p>
-                                        <a href="">【星卡畅游版】</a>
-                                        <a href="">200GB定向免流+1元/GB/天 首月体验~</a>
-                                        <i>|</i>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p>
-                                        <a href="">【亲情卡】</a>
-                                        <a href="">3GB流量+100分钟语音+亲情互打免费 new~</a>
-                                        <i>|</i>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p>
-                                        <a href="">【5G畅享套餐】</a>
-                                        <a href="">169元/月 40GB流量+800分钟语音+300Mbps宽带+超清ITV</a>
-                                        <i>|</i>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p>
-                                        <a href="">【5G畅享套餐】</a>
-                                        <a href="">199元/月 60GB流量+1000分钟语音+300Mbps宽带+超清ITV</a>
-                                        <i>|</i>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p>
-                                        <a href=""></a>
-                                    </p>
-                                </dd>   
-                            </dl>
-                            <dl>
-                                <dt>号码类型</dt>
-                                <dd>
-                                    <p>
-                                        <a href="">0元靓号</a>
-                                        <i>|</i>
-                                        <a href="">事业靓号</a>
-                                        <i>|</i>
-                                        <a href="">爱情靓号</a>
-                                        <i>|</i>
-                                        <a href="">精选靓号</a>
-                                        <i>|</i>
-                                        <a href="">199靓号</a>
-                                        <i>|</i>
-                                        <a href="">177靓号</a>
-                                        <i>|</i>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div> -->
+                        <li>
+                            <i class="buy"></i><a>套餐</a>/<a>靓号</a><i class="rightpull1"></i>
+                            <div class="submenu1">
+                                <dl>
+                                    <dt>号码</dt>
+                                    <dd>
+                                        <p>
+                                            <a href="#" class="red">191<i class="line">|</i></a>
+                                            <a href="#" class="red">199<i class="line">|</i></a>
+                                            <a href="#"><span class="change">173</span><i class="line">|</i></a>
+                                            <a href="#"><span class="change">189</span><i class="line">|</i></a>
+                                            <a href="#"><span class="change">177</span><i class="line">|</i></a>
+                                            <a href="#"><span class="change">181</span><i class="line">|</i></a>
+                                            <a href="#"><span class="change">180</span><i class="line">|</i></a>
+                                            <a href="#"><span class="change">133</span><i class="line">|</i></a>
+                                            <a href="#"><span class="change">153</span><i class="line">|</i></a>
+                                            
+                                        </p>
+                                    </dd> 
+                                </dl>
+                                <dl>
+                                    <dt>套餐</dt>
+                                    <dd class="meal">
+                                        <p><a href="#"><span class="purple blod">【传递爱心</sapn><span class="red">❤</span><sapn>电信先行】</span><span class="change">扶贫专属套餐</span></a><i class="line">|</i><a href="#"><span class="change">助残优惠套餐</span><span class="red">new~</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="red blod">【全能副卡】</span><span class="change">一个套餐全家享，与家人共享语音流量</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="green blod">【星卡畅游版】</span><span class="change">200GB定向免流+1元/GB/天</span><span class="red">首月体验~</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="orange blod">【亲情卡】</span><span class="change">GB流量+100分钟语音+亲情互打免费</span><span class="red">new~</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="black blod">【5G畅享套餐】</span><span class="change">169元/月 40GB流量+800分钟语音+300Mbps宽带+超清ITV</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="black blod">【5G畅享套餐】</span><span class="change">199元/月 60GB流量+1000分钟语音+300Mbps宽带+超清ITV</span></a><i class="line">|</i></p>
+                                    </dd>   
+                                </dl>
+                                <dl class="noborder">
+                                    <dt>号码类型</dt>
+                                    <dd>
+                                        <p>
+                                            <a href="#" class="red">0元靓号</a>
+                                            <i class="line">|</i>
+                                            <a href="#" class="red">事业靓号</a>
+                                            <i class="line">|</i>
+                                            <a href="#" class="red">爱情靓号</a>
+                                            <i class="line">|</i>
+                                            <a href="#" class="red">精选靓号</a>
+                                            <i class="line">|</i>
+                                            <a href="#" class="blue">199靓号</a>
+                                            <i class="line">|</i>
+                                            <a href="#" class="blue">177靓号</a>
+                                            <i class="line">|</i>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <div class="police"><a href="#"><img src="images/police.jpg"></a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="choose"></i><a>宽带<i class="rightpull2"></i></a>
+                            <div class="submenu2">
+                                <dl>
+                                    <dt>宽带爆款</dt>
+                                    <dd>
+                                        <p><a href="#"><span class="green">【50Mbps包年】</span><span class="change">499元/年随选宽带</span></a><i class="line_more">|</i></p>
+                                        <p><a href="#"><span class="red">【100Mbps包年】</span><span class="change">699元/年随选宽带</span></a></p>
+                                        <p><a href="#"><span class="black">【5G畅享套餐】</span><span class="change">169元/月 40GB流量+800分钟语音+300Mbps宽带+超清ITV</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="black">【5G畅享套餐】</span><span class="change">199元/月 60GB流量+1000分钟语音+300Mbps宽带+超清ITV</span></a><i class="line">|</i></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>宽带新装</dt>
+                                    <dd>
+                                        <p><a href="#"><span class="red">50Mbps宽带</span><i class="line">|</i><span class="red">100Mbps宽带</span><i class="line">|</i><span class="red">300Mbps宽带（5G套餐）</span><i class="line">|</i></a></p>
+                                        <p><a href="#"><span class="green">【装宽带】</span><span class="change">足不出户轻松预约，专属客户经理即刻与您联系！</span><i class="line">|</i></a></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>宽带老用户</dt>
+                                    <dd>
+                                        <p><a href="#"><span class="change">天翼看家</span><i class="line">|</i></a><a href="#"><span class="change">全屋WIFI</span><i class="line">|</i></a><a href="#"><span class="red">宽带续约</span><i class="line">|</i></a><a href="#"><span class="change">宽带缴费</span><i class="line">|</i></a><a href="#"><span class="change">宽带提速</span><i class="line">|</i></a></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>电视老用户</dt>
+                                </dl>
+                                <dl class="noborder">
+                                    <dt>宽带专区</dt>
+                                    <dd>
+                                        <p><a href="#"><span class="change">宽带订单查询</span><i class="line">|</i></a><a href="#"><span class="change">宽带账户查询</span><i class="line">|</i></a><a href="#"><span class="change">装移修进度查询</span><i class="line">|</i></a><a href="#"><span class="change">宽带资源查询</span><i class="line">|</i></a><a href="#"><span class="change">宽带新装</span><i class="line">|</i></a></p>
+                                        <p><a href="#"><span class="change">宽带续约</span><i class="line">|</i></a><a href="#"><span class="change">宽带提速</span><i class="line">|</i></a><a href="#"><span class="change">宽带报障</span><i class="line">|</i></a><a href="#"><span class="change">宽带充值</span><i class="line">|</i></a><a href="#"><span class="red">密码服务</span><i class="line">|</i></a></p>
+                                    </dd>
+                                </dl>
+                                <div>
+                                    <span><a href="#"><img src="images/a1.jpg"></a></span>
+                                    &nbsp;
+                                    <span><a href="#"><img src="images/a2.jpg"></a></span>
+                                </div>
 
-                        <li><i class="choose"></i><a>宽带<i class="rightpull2"></i></a></li>
-                        <li><i class="pretend"></i><a>智能<i class="rightpull2"></i></a></li>
-                        <li><i class="enjoy"></i><a>话费<i class="rightpull2"></i></a></li>
-                        <li><i class="charge"></i><a>费用<i class="rightpull2"></i></a></li>
-                        <li><i class="check"></i><a>业务<i class="rightpull2"></i></a></li>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <i class="pretend"></i><a>智能<i class="rightpull2"></i></a>
+                            <div class="submenu3">
+                                <dl>
+                                    <dt>手机配件</dt>
+                                </dl>
+                                <dl class="noborder">
+                                    <dt>智能设备</dt>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="enjoy"></i><a>话费<i class="rightpull2"></i></a>
+                            <div class="submenu4">
+                                <dl>
+                                    <dt>充值卡充值</dt>
+                                    <dd><a href="#"><span class="change">充值卡充值</span><i class="line">|</i></a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>银行卡充值</dt>
+                                    <dd><a href="#"><span class="red">支付宝支付</span><i class="line">|</i></a><a href="#"><span class="red">微信支付</span><i class="line">|</i></a><a href="#"><span class="red">百度钱包</span><i class="line">|</i></a><a href="#"><span class="change">银行卡充值</span><i class="line">|</i></a></dd>
+                                </dl>
+                                <dl class="noborder">
+                                    <dt>翼支付</dt>
+                                    <dd><a href="#"><span class="change">翼支付充值</span><i class="line">|</i></a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="charge"></i><a>费用<i class="rightpull2"></i></a>
+                            <div class="submenu5">
+                                <dl>
+                                    <dt>我的话费</dt>
+                                    <dd>
+                                        <p><a href="#"><span class="green">余额查询</span></a><i class="line">|</i><a href="#"><span class="change">实时话费查询</span></a><i class="line">|</i><a href="#"><span class="red">账单查询</span></a><i class="line">|</i><a href="#"><span class="change">充值记录查询</span></a><i class="line">|</i><a href="#"><span class="change">余额变动明细</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="change">话费返还查询</span></a><i class="line">|</i><a href="#"><span class="blue">欠费查询</span></a><i class="line">|</i></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>我的业务</dt>
+                                    <dd>
+                                        <p><a href="#"><span class="change">电信合伙人</span></a><i class="line">|</i><a href="#"><span class="change">我的欢Go</span></a><i class="line">|</i><a href="#"><span class="red">我的流量</span></a><i class="line">|</i><a href="#"><span class="blue">套餐使用情况</span></a><i class="line">|</i><a href="#"><span class="change">星级服务</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="change">积分兑换</span></a><i class="line">|</i><a href="#"><span class="red">电子发票</span></a><i class="line">|</i></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>账单查询</dt>
+                                    <dd><p><a href="#"><span class="change">我的话费账单</span></a><i class="line">|</i></p></dd>
+                                </dl>
+                                <dl class="noborder">
+                                    <dt>详细查询</dt>
+                                    <dd><a href="#"><span class="green">上网详单</span></a><i class="line">|</i><a href="#"><span class="green">语音详单</span></a><i class="line">|</i><a href="#"><span class="green">短信详单</span></a><i class="line">|</i></p></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="check"></i><a>业务<i class="rightpull2"></i></a>
+                            <div class="submenu6">
+                                <dl>
+                                    <dt>畅享专区</dt>
+                                    <dd>
+                                        <p><a href="#"><span class="black">【5G畅享套餐】</span></a><a href="#"><span class="change">169元/月 40GB流量+800分钟语音+300Mbps宽带+超清ITV</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="black">【5G畅享套餐】</span></a><a href="#"><span class="change">199元/月 60GB流量+1000分钟语音+300Mbps宽带+超清ITV</span></a><i class="line">|</i></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>流量包专区</dt>
+                                    <dd>
+                                        <p><a href="#"><span class="red">5G升级流量包60GB（主副卡共享）</span></a><a href="#"><span class="change">69元/月</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><span class="green">5G升级流量包20GB（主副卡共享）</span></a><a href="#"><span class="change">29元/月</span></a><i class="line">|</i></p>
+                                        <p><a href="#"><9元 class="change">5G升级流量包10GB（单卡使用）9元/月</span></a><i class="line">|</i></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>宽带特权</dt>
+                                    <dd><a href="#"><span class="green">宽带快速预约</span></a><i class="line">|</i><a href="#"><span class="red">宽带续约</span></a><i class="line">|</i><a href="#"><span class="change">宽带提速</span></a><i class="line">|</i></dd>
+                                </dl>
+                                <dl>
+                                    <dt>老用户专区</dt>
+                                    <dd><a href="#"><span class="green">加副卡 共享套餐</span></a><i class="line">|</i><a href="#"><span class="red">我的积分</span></a><i class="line">|</i><a href="#"><span class="change">积分商城</span></a><i class="line">|</i></dd>
+                                </dl>
+                                <dl>
+                                    <dt>热门业务</dt>
+                                    <dd><a href="#"><span class="red">服务密码重置</span></a><i class="line">|</i><a href="#"><span class="change">国际/港澳台漫游</span></a><i class="line">|</i><a href="#"><span class="change">189邮箱</span></a><i class="line">|</i><a href="#"><span class="change">添益宝</span></a><i class="line">|</i></dd>
+                                </dl>
+                                <dl>
+                                    <dd>电视特权</dd>
+                                </dl>
+                                <dl class="noborder">
+                                    <dt>行业应用</dt>
+                                    <dd><a href="#"><span class="change">外勤助手</span><i class="line">|</i></a><a href="#"><span class="change">VoLTE高清通话</span><i class="line">|</i></a></dd>
+                                </dl>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="intro">
@@ -779,18 +1268,114 @@
                     </li>    
                 </ul>
             </div>
-            <div class="geek">
-                <div class="leftbox">
-                    <div class="topbox">
-                        <p class="small"><a href="#"><img src="images/5g.png">5G套餐</a></p>
-                        <i></i>
-                        <p class="small"><a href="#"><img src="images/tehui.png">特惠宽带</a></p>
-                    </div>
-                    <div class="footbox">
-                    </div>
-                </div>
+            <div class="title_1">
+                <img src="images/title_01.png">
+                <span>好宝贝，够任性，就是要炫耀！</span>
             </div>
-            <div class="happy"></div>
+            <div class="geek">
+                <ul>
+                    <li>
+                        <div class="leftbox">
+                            <div class="topbox">
+                                <p class="small"><a href="#"><img src="images/5g.png">5G套餐</a></p>
+                                <i></i>
+                                <p class="small"><a href="#"><img src="images/tehui.png">特惠宽带</a></p>
+                            </div>
+                            <div class="footbox">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="middlebox">
+                            <img src="images/rizu.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rightbox">
+                            <ul class="topl">
+                                <li>
+                                    <p class="app"><a href="#">200GB主流APP免流</a></p>
+                                    <p><a href="#"><img src="images/jk1.png"></a></p>
+                                </li>
+                                <li>
+                                    <p class="app"><a href="#">任性畅游互联网</a></p>
+                                    <p><a href="#"><img src="images/jk2.png"></a></p>
+                                </li>
+                                <li>
+                                    <p class="app"><a href="#">国内通话0.1元/分钟</a></p>
+                                    <p><a href="#"><img src="images/jk3.png"></a></p>
+                                </li>
+                            </ul>
+                            <ul class="underl">
+                                <li>
+                                    <p class="gb"><a href="#">流量省心自动续订</a></p>
+                                    <p><a href="#"><img src="images/jk4.png"></a></p>
+                                </li>
+                                <li>
+                                    <p class="gb"><a href="#">享首月体验金</a></p>
+                                    <p><a href="#"><img src="images/jk5.png"></a></p>
+                                </li>
+                                <li>
+                                    <p class="gb"><a href="#">国内流量1元/GB/天</a></p>
+                                    <p><a href="#"><img src="images/jk6.png"></a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="happy">
+                <ul>
+                    <li>
+                        <div class="leftbox">
+                            <div class="topbox">
+                                <p class="small"><a href="#"><img src="images/5g.png">5G套餐</a></p>
+                                <i></i>
+                                <p class="small"><a href="#"><img src="images/tehui.png">特惠宽带</a></p>
+                            </div>
+                            <div class="footbox">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="middlebox">
+                            <img src="images/rizu.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rightbox">
+                            <ul class="topl">
+                                <li>
+                                    <p class="app"><a href="#">200GB主流APP免流</a></p>
+                                    <p><a href="#"><img src="images/jk1.png"></a></p>
+                                </li>
+                                <li>
+                                    <p class="app"><a href="#">任性畅游互联网</a></p>
+                                    <p><a href="#"><img src="images/jk2.png"></a></p>
+                                </li>
+                                <li>
+                                    <p class="app"><a href="#">国内通话0.1元/分钟</a></p>
+                                    <p><a href="#"><img src="images/jk3.png"></a></p>
+                                </li>
+                            </ul>
+                            <ul class="underl">
+                                <li>
+                                    <p class="gb"><a href="#">流量省心自动续订</a></p>
+                                    <p><a href="#"><img src="images/jk4.png"></a></p>
+                                </li>
+                                <li>
+                                    <p class="gb"><a href="#">享首月体验金</a></p>
+                                    <p><a href="#"><img src="images/jk5.png"></a></p>
+                                </li>
+                                <li>
+                                    <p class="gb"><a href="#">国内流量1元/GB/天</a></p>
+                                    <p><a href="#"><img src="images/jk6.png"></a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <div class="business"></div>
         </div>
     </div>
