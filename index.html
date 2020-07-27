@@ -27,6 +27,7 @@
         box-sizing: border-box;
         font-family: inherit;
         outline: none;
+        padding: 0;
     }
     i{
         font-style: normal;
@@ -37,6 +38,12 @@
     }
     dd{
         margin-left: 0;
+    }
+
+    .box > a img{
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
     }
 
 
@@ -52,8 +59,8 @@
     }
     .header .top .ban1{
         width: 1200px;
-        margin-left: 351.5px;
-        margin-right: 351.5px;
+        margin-left: auto;
+        margin-right: auto;
         line-height: 30px;
     }
     .header .top .ban1 p > a:hover{
@@ -215,8 +222,8 @@
     .header .middle .ban2{
         width: 1200px;
         height: 120px;
-        margin-left: 351.5px;
-        margin-right: 351.5px;
+        margin-left: auto;
+        margin-right: auto;
         position: relative;
     }
     .header .middle .ban2 .logo{
@@ -284,7 +291,6 @@
         text-align: center;
         line-height: 32px;
         background-color: #FF8201;
-
     }
     .header .middle .ban2 .search button{
         width: 90px;
@@ -329,11 +335,10 @@
         background-color: #FF8200;
     }
     .header .under .ban3{
-        float: left;
         width: 1200px;
         height: 45px;
-        margin-left: 351.5px;
-        margin-right: 351.5px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .header .under .ban3 .service a{
         display: inline-block;
@@ -396,18 +401,22 @@
     .header .rotation{
         width: 100%;
         height: 421px;
-        background: url(images/scro1.jpg) no-repeat;
+        background-image: url(images/scro1.jpg);
     }
     .header .rotation .rota{
+        position: relative;
         width: 1200px;
         height: 421px;
-        margin-left: 351.5px;
-        margin-right: 351.5px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .header .rotation .rota .menu{
         width: 190px;
         height: 420px;
         background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     .header .rotation .rota .menu ul li{
         width: 188px;
@@ -803,13 +812,162 @@
         border-bottom: none;
     }
 
-    .header .rotation .roat .intro{
+    .header .rotation .rota .intro{
         width: 224px;
         height: 409px;
         background-color: white;
-        float: right;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        font-size: 12px;
+        color: #777;
+        font-weight: bold;
     }
-
+    .header .rotation .rota .intro .intro_1{
+        width: 224px;
+        height: 194px;
+    }
+    .header .rotation .rota .intro .intro_1 .intro_top{
+        width: 224px;
+        height: 29px;
+        background-color: #F4F4F4;
+        text-align: center;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .header .rotation .rota .intro .intro_1 ul li{
+        float: left;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .header .rotation .rota .intro .intro_1 .intro_top .orange{
+        color: #ff8201;
+    }
+    .header .rotation .rota .intro .intro_1 .intro_top i.icon1{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        background: url(images/189-index.png) no-repeat -232px -227px;
+    }
+    .header .rotation .rota .intro .intro_1 .intro_top i.icon2{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        background: url(images/189-index.png) no-repeat -229px -299px;        
+    }
+    .header .rotation .rota .intro .intro_1 .intro_top li > i{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .header .rotation .rota .intro .intro_1 .intro_bottom{
+        padding-top: 20px;
+    }
+    .header .rotation .rota .intro .intro_1 ul.intro_bottom li{
+        padding-left: 20px;
+    }
+    .header .rotation .rota .intro .intro_2{
+        width: 224px;
+        height: 2px;
+        padding-left: 22px;
+    }
+    .header .rotation .rota .intro .intro_2 > div{
+        width: 180px;
+        height: 2px;
+        background-color: #CDCDCD;
+    }
+    .header .rotation .rota .intro .intro_3{
+        width: 224px;
+        height: auto;
+        margin-top: 10px;
+    }
+    .header .rotation .rota .intro .intro_3 > ul li{
+        padding-left: 15px;
+        float: left;
+    }
+    .header .rotation .rota .intro .intro_3 ul li .orange{
+        color: #ff8201;
+    }
+    .header .rotation .rota .intro .intro_3 ul li i{
+        color: #E4E4E4;
+    }
+    .header .rotation .rota .intro .intro_3 .orange{
+        color: #ff8201;
+    }
+    .header .rotation .rota .intro .intro_3 p{
+        padding-left: 20px;
+    }
+    .header .rotation .rota .intro .intro_3 p.form1{
+        padding: 10px 0 10px 5px;
+    }
+    .header .rotation .rota .intro .intro_3 p.form2 .right{
+        padding-right: 20px;
+    }
+    .header .rotation .rota .intro .intro_3 p.form3{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .header .rotation .rota .intro .intro_3 p.form3 .right{
+        padding-right: 18px;
+    }
+    .header .rotation .rota .intro .intro_3 p.form3 .money{
+        display: inline-block;
+        width: 64px;
+        height: 21px;
+        border: 1px solid #e4e4e4;
+    }
+    .header .rotation .rota .intro .intro_3 p.form4{
+        padding-left: 10px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+    .header .rotation .rota .intro .intro_3 p.form4 .right{
+        padding-right: 18px;
+    }
+    .header .rotation .rota .intro .intro_3 [name="haoma"]{
+        width: 103px;
+        height: 19px;
+        border: 1px solid #e4e4e4;
+        padding-left: 10px;
+    }
+    .header .rotation .rota .intro .intro_3 [name="yanzhengma"]{
+        width: 42px;
+        height: 19px;
+        border: 1px solid #e4e4e4;
+        padding-left: 10px;
+    }
+    .header .rotation .rota .intro .intro_3 img{
+        width: 76px;
+        height: 21px;
+        border: 1px solid #e4e4e4;
+        position: absolute;
+        top: -1px;
+    }
+    .header .rotation .rota .intro .intro_3 button{
+        width: 126px;
+        height: 25px;
+        padding: 5px 26px;
+        border: none;
+        background-color: #FF8201;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .header .rotation .rota .intro .intro_3 button:active{
+        color: red;
+    }
+    .header .rotation .rota .intro .intro_4{
+        width: 224px;
+        height: 2px;
+        padding-left: 22px;
+        margin-top: 7px;
+    }
+    .header .rotation .rota .intro .intro_4 > div{
+        width: 180px;
+        height: 2px;
+        background-color: #CDCDCD;
+    }
 
     .main{
         width: 100%;
@@ -886,23 +1044,10 @@
         height: 80px;
         padding-top: 20px;
     }
-    .main .content .geek .leftbox .topbox i{
-        display: inline-block;
-        width: 1px;
-        height: 91px;
-        vertical-align: middle;
-        background: url(images/189-index.png) no-repeat -398px -201px;
-    }
     .main .content .geek .leftbox .footbox{
         width: 190px;
         height: 320px;
         background-color: #FEDA60;
-    }
-    .main .content .geek .leftbox .footbox > i{
-        width: 182px;
-        height: 2px;
-        vertical-align: middle;
-        background: url(images/189-index.png) no-repeat -217px -571px;
     }
     .main .content .geek .leftbox .footbox > P{
         font-size: 0.75em;
@@ -1685,6 +1830,7 @@
 
 </style>
 <body>
+    <div class="box"><a href="#"><img src="images/foot.png"></a>
     <div class="header">
         <div class="top">
             <div class="ban1">
@@ -2003,7 +2149,72 @@
                     </ul>
                 </div>
                 <div class="intro">
-                    <div></div>
+                    <div class="intro_1">
+                        <ul class="intro_top">
+                            <li><a href="#"><i class="icon1"></i><span class="orange">欢享服务</span></a></li>
+                            <li><i>|</i></li>
+                            <li class="active"><a href="#"><i class="icon2"></i><span>超值购</span></a></li>
+                        </ul>
+                        <ul class="intro_bottom">
+                            <li>
+                                <p><a href="#"><img src="images/intro_1.png"><br>星级服务</a></p>&nbsp;
+                                <p><a href="#"><img src="images/intro_4.png"><br>电子发票</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><img src="images/intro_2.png"><br>积分商城</a></p>&nbsp;
+                                <p><a href="#"><img src="images/intro_5.png"><br>办副卡</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><img src="images/intro_3.png"><br>5G套餐</a></p>&nbsp;
+                                <p><a href="#"><img src="images/intro_6.png"><br>漫游服务</a></p>
+                            </li>
+                        <!-- </ul>
+                        <ul class="intro_right">
+                            <li><a href="#"><img src="images/intro_7.png"></a><br>流量超市</li>
+                            <li><a href="#"><img src="images/intro_8.png"></a><br>福卡乐园</li>
+                            <li><a href="#"><img src="images/intro_9.png"></a><br>靓号专区</li>
+                        </ul> -->
+                    </div>
+                    <div class="intro_2">
+                        <div></div>
+                    </div>
+                    <div class="intro_3">
+                        <ul>
+                            <li><span class="orange">手机</span></li>
+                            <li><i>|</i></li>
+                            <li>宽带</li>
+                            <li><i>|</i></li>
+                            <li>固话</li>
+                            <li><i>|</i></li>
+                        </ul>
+                        <br>
+                        <p class="form1">
+                            <input type="radio" value="银行卡充值" checked><span class="orange">银行卡充值</span>
+                            <input type="radio" value="卡密充值">卡密充值
+                        </p>
+                        <p class="form2"><span class="right">号码</span><input name="haoma" type="text"></p>
+                        <p class="form3">
+                            <span class="right">金额</span>
+                            <span class="money">10元</span>
+                                <!-- <div class="jin">
+                                    <ul>
+                                        <li>100元&nbsp;10元</li>
+                                        <li>200元&nbsp;20元</li>
+                                        <li>300元&nbsp;30元</li>
+                                        <li>500元&nbsp;50元</li>
+                                    </ul>
+                                </div> -->
+                            </span>
+                        </p>
+                        <p class="form4"><span class="right">验证码</span><input name="yanzhengma" type="text">&nbsp;<img src="images/aircz.png"></p>
+                        <p class="form5"><button>立即充值</button></p>
+                    </div>
+                    <div class="intro_4">
+                        <div></div>
+                    </div>
+                    <div class="intro_5">
+                        <marquee direction="left" onmousemove="this.stop()" onmouseout="this.start()">2014、2015年一期LTE基站验收项目公示（新余）</marquee></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2036,11 +2247,9 @@
                         <div class="leftbox">
                             <div class="topbox">
                                 <p class="small"><a href="#"><img src="images/5g.png"></a><a href="#"><br><span>5G套餐</span></a></p>
-                                <i></i>
                                 <p class="small"><a href="#"><img src="images/tehui.png"><a href="#"><br><span>特惠宽带</span></a></a></p>
                             </div>
                             <div class="footbox">
-                                <i></i>
                                 <p>五一出游季</p>
                             </div>
                         </div>
@@ -2446,6 +2655,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 </html>
