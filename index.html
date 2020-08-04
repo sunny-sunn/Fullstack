@@ -18,35 +18,143 @@
                 </div>
             </a>
 
-            <div class="header_nav">
-                <div class="nav">
-                    <ul class="nav_left">
+            <div class="topbar">
+                <div class="inner_1">
+                    <ul class="inner_left">
                         <li>喵，欢迎来天猫</li>
                         <li><a href="#">请登录</a></li>
                         <li><a href="#">免费注册</a></li>
                     </ul>
-                    <ul class="nav_right">
-                        <li>
-                            <a href="#">我的淘宝<i class="iconfont iconxiala1"></i></a>
-                            <p>
+                    <ul class="inner_right">
+                        <li class="line">
+                            <a href="#">我的淘宝</a><i class="iconfont iconxiala1"></i>
+                            <p class="my_taobao">
                                 <a href="#">已买到的宝贝</a>
                                 <a href="#">已卖出的宝贝</a>
                             </p>
                         </li>
                         <li><i class="icon">&#xf0148;</i><a href="#">购物车</a></li>
-                        <li><a href="#">收藏夹<i class="iconfont iconxiala1"></i></a></li>
-                        <li>|</li>
-                        <li><i class="icon">&#x3448;</i><a href="#">手机版</a></li>
+                        <li class="line">
+                            <a href="#">收藏夹</a><i class="iconfont iconxiala1"></i>
+                            <p class="collect">
+                                <a href="#">收藏的宝贝</a>
+                                <a href="#">收藏的店铺</a>
+                            </p>
+                        </li>
+                        <li class="ver_line">|</li>
+                        <li>
+                            <i class="icon">&#x3448;</i><a href="#">手机版</a>
+                            <p class="phone">
+                                <img src="images/nav_3.png">
+                            </p>
+                        </li>
                         <li><a href="#">淘宝网</a></li>
-                        <li><a href="#">商家支持<i class="iconfont iconxiala1"></i></a></li>
-                        <li><a href="#"><i class="icon">&#xe601;</i>网站导航<i class="iconfont iconxiala1"></i></a></li>
+                        <li class="line">
+                            <a href="#">商家支持</a><i class="iconfont iconxiala1"></i>
+                            <p class="store">
+                                <span class="bold">商家：</span>
+                                <span><a href="#" class="left">商家中心</a><a href="#">天猫规则</a></span>
+                                <span><a href="#" class="left">商家入驻</a><a href="#">运营服务</a></span>
+                                <span><a href="#" class="left">商家品控</a><a href="#">商家工具</a></span>
+                                <span><a href="#" class="left">天猫智库</a><a href="#">喵言喵语</a></span>
+                                <span></span>
+                                <span class="bold">帮助：</span>
+                                <span><a href="#" class="left">帮助中心</a><a href="#">问商友</a></span>
+                                <span></span>
+                            </p>
+                        </li>
+                        <li>
+                            <i class="icon">&#xe601;</i><a href="#">网站导航</a><i class="iconfont iconxiala1"></i>
+                            <p class="website">
+
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <div></div>
+            <div class="layout">
+                <div class="inner_2">
+                    <img src="images/TMALL.png">
+                    <form><input type="text" placeholder="搜索&nbsp;天猫&nbsp;商品/品牌/店铺"><button><span>搜&nbsp;索</span></button></form>
+                </div>
+            </div>
 
-            <div class="nav_2"></div>
+            <div class="banner">
+                <div class="inner_3">
+                    <ul>
+                        <li class="first"><i class="icon">&#xe623;</i><span>商品分类</span></li>
+                        <li><a href="#"><img src="images/tmall_shop.png"></a></li>
+                        <li><a href="#"><img src="images/tmall_inter.png"></a></li>
+                        <li><a href="#">天猫会员</a></li>
+                        <li><a href="#">电器城</a></li>
+                        <li><a href="#">喵鲜生</a></li>
+                        <li><a href="#">医药馆</a></li>
+                        <li><a href="#">营业厅</a></li>
+                        <li><a href="#">魅力惠</a></li>
+                        <li><a href="#">飞猪旅行</a></li>
+                        <li><a href="#">苏宁易购</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="scroll">
+                    <input id="one" type="radio" name="scro" checked>
+                    <input id="two" type="radio" name="scro">
+                    <input id="three" type="radio" name="scro">
+                    <input id="four" type="radio" name="scro">
+                    <input id="five" type="radio" name="scro">
+                    <input id="six" type="radio" name="scro">
+                    <ul>
+                        <li><img src="images/scro_1.webp"></li>
+                        <li><img src="images/scro_2.jpg"></li>
+                        <li><img src="images/scro_3.jpg"></li>
+                        <li><img src="images/scro_4.jpg"></li>
+                        <li><img src="images/scro_5.webp"></li>
+                        <li><img src="images/scro_6.webp"></li>
+                    </ul>
+                    <p>
+                        <label for="one"></label>
+                        <label for="two"></label>
+                        <label for="three"></label>
+                        <label for="four"></label>
+                        <label for="five"></label>
+                        <label for="six"></label>
+                    </p>
+                </div>
+                <script>
+                    var p=0;
+                    var int=setInterval(function(){
+                        document.querySelectorAll('.scroll [type="radio"]')[p].checked=true;
+                        document.querySelector('.scroll > ul').style.transform='translate(-${p*590}px)';
+                        p=p+1 > 5 ? 0: p+1;
+                    },3000);
+                </script>
+
+                <div class="menu">
+                    <ul>
+                        <li class="pink"><i class="icon">&#xe60d;</i><a href="#">女装</a> /<a href="#">内衣</a></li>
+                        <li class="blue"><i class="icon">&#xe618;</i><a href="#">男装</a> /<a href="#">运动户外</a></li>
+                        <li class="purple"><i class="icon">&#xe619;</i><a href="#">女鞋</a> /<a href="#">男鞋</a> /<a href="#">箱包</a></li>
+                        <li class="pink"><i class="icon">&#xe60f;</i><a href="#">美妆</a> /<a href="#">个人护理</a></li>
+                        <li class="purple"><i class="icon">&#xe606;</i><a href="#">腕表</a> /<a href="#">眼镜</a> /<a href="#">珠宝饰品</a></li>
+                        <li class="blue"><i class="icon">&#xe60b;</i><a href="#">手机</a> /<a href="#">数码</a> /<a href="#">电脑办公</a></li>
+                        <li class="pink_red"><i class="icon">&#xe60a;</i><a href="#">母婴玩具</a></li>
+                        <li class="yellow"><i class="icon">&#xe609;</i><a href="#">零食</a> /<a href="#">茶酒</a> /<a href="#">进口食品</a></li>
+                        <li class="yellow"><i class="icon">&#xe63f;</i><a href="#">生鲜水果</a></li>
+                        <li class="blue"><i class="icon">&#xe608;</i><a href="#">大家电</a> /<a href="#">生活电器</a></li>
+                        <li class="red"><i class="icon">&#xe607;</i><a href="#">家具建材</a></li>
+                        <li class="blue"><i class="icon">&#xe613;</i><a href="#">汽车</a> /<a href="#">配件</a> /<a href="#">用品</a></li>
+                        <li class="yellow"><i class="icon">&#xe614;</i><a href="#">家纺</a> /<a href="#">家饰</a> /<a href="#">鲜花</a></li>
+                        <li class="green"><i class="icon">&#xe616;</i><a href="#">医药保健</a></li>
+                        <li class="red"><i class="icon">&#xe615;</i><a href="#">厨具</a> /<a href="#">收纳</a> /<a href="#">宠物</a></li>
+                        <li class="green"><i class="icon">&#xe617;</i><a href="#">图书音像</a></li>
+                    </ul>
+                </div>
+                
+            </div>
 
         </div>
     </div>
