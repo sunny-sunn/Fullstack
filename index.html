@@ -101,58 +101,80 @@
             <div class="content">
 
                 <div class="scroll">
-                    <input id="one" type="radio" name="scro" checked>
-                    <input id="two" type="radio" name="scro">
-                    <input id="three" type="radio" name="scro">
-                    <input id="four" type="radio" name="scro">
-                    <input id="five" type="radio" name="scro">
-                    <input id="six" type="radio" name="scro">
-                    <ul>
-                        <li><img src="images/scro_1.webp"></li>
-                        <li><img src="images/scro_2.jpg"></li>
-                        <li><img src="images/scro_3.jpg"></li>
-                        <li><img src="images/scro_4.jpg"></li>
-                        <li><img src="images/scro_5.webp"></li>
-                        <li><img src="images/scro_6.webp"></li>
-                    </ul>
-                    <p>
-                        <label for="one"></label>
-                        <label for="two"></label>
-                        <label for="three"></label>
-                        <label for="four"></label>
-                        <label for="five"></label>
-                        <label for="six"></label>
+                    <input id="banner1" type="radio" name="banner" checked>
+                    <input id="banner2" type="radio" name="banner">
+                    <input id="banner3" type="radio" name="banner">
+                    <input id="banner4" type="radio" name="banner">
+                    <input id="banner5" type="radio" name="banner">
+                    <input id="banner6" type="radio" name="banner">
+
+                    <div class="item banner1">
+                        <a href="#"><img src="images/scro_1.webp" height="500px"></a>
+                        <a href="#" class="ads pos1"><img src="images/pos_1.webp"></a>
+                        <a href="#" class="ads pos2"><img src="images/pos_2.webp"></a>
+                    </div>
+                    <div class="item banner2">
+                        <a href="#"><img src="images/scro_2.jpg" height="500px"></a>
+                    </div>
+                    <div class="item banner3">
+                        <a href="#"><img src="images/scro_3.jpg" height="500px"></a>
+                        <a href="#" class="ads pos1"><img src="images/pos_3.webp"></a>
+                        <a href="#" class="ads pos2"><img src="images/pos_4.webp"></a>
+                    </div>  
+                    <div class="item banner4">  
+                        <a href="#"><img src="images/scro_4.jpg" height="500px"></a>
+                    </div>
+                    <div class="item banner5">   
+                        <a href="#"><img src="images/scro_5.webp" height="500px"></a>
+                        <a href="#" class="ads pos1"><img src="images/pos_5.webp"></a>
+                        <a href="#" class="ads pos2"><img src="images/pos_6.webp"></a>
+                    </div>
+                    <div class="item banner6">  
+                        <a href="#"><img src="images/scro_6.webp" height="500px"></a>
+                        <a href="#" class="ads pos1"><img src="images/pos_7.webp"></a>
+                        <a href="#" class="ads pos2"><img src="images/pos_8.webp"></a>
+                    </div>    
+                    
+                    <p class="pages">
+                        <label for="banner1"></label>
+                        <label for="banner2"></label>
+                        <label for="banner3"></label>
+                        <label for="banner4"></label>
+                        <label for="banner5"></label>
+                        <label for="banner6"></label>
                     </p>
                 </div>
                 <script>
                     var p=0;
                     var int=setInterval(function(){
                         document.querySelectorAll('.scroll [type="radio"]')[p].checked=true;
-                        document.querySelector('.scroll > ul').style.transform='translate(-${p*590}px)';
                         p=p+1 > 5 ? 0: p+1;
-                    },3000);
+                    },10000);
                 </script>
 
-                <div class="menu">
-                    <ul>
-                        <li class="pink"><i class="icon">&#xe60d;</i><a href="#">女装</a> /<a href="#">内衣</a></li>
-                        <li class="blue"><i class="icon">&#xe618;</i><a href="#">男装</a> /<a href="#">运动户外</a></li>
-                        <li class="purple"><i class="icon">&#xe619;</i><a href="#">女鞋</a> /<a href="#">男鞋</a> /<a href="#">箱包</a></li>
-                        <li class="pink"><i class="icon">&#xe60f;</i><a href="#">美妆</a> /<a href="#">个人护理</a></li>
-                        <li class="purple"><i class="icon">&#xe606;</i><a href="#">腕表</a> /<a href="#">眼镜</a> /<a href="#">珠宝饰品</a></li>
-                        <li class="blue"><i class="icon">&#xe60b;</i><a href="#">手机</a> /<a href="#">数码</a> /<a href="#">电脑办公</a></li>
-                        <li class="pink_red"><i class="icon">&#xe60a;</i><a href="#">母婴玩具</a></li>
-                        <li class="yellow"><i class="icon">&#xe609;</i><a href="#">零食</a> /<a href="#">茶酒</a> /<a href="#">进口食品</a></li>
-                        <li class="yellow"><i class="icon">&#xe63f;</i><a href="#">生鲜水果</a></li>
-                        <li class="blue"><i class="icon">&#xe608;</i><a href="#">大家电</a> /<a href="#">生活电器</a></li>
-                        <li class="red"><i class="icon">&#xe607;</i><a href="#">家具建材</a></li>
-                        <li class="blue"><i class="icon">&#xe613;</i><a href="#">汽车</a> /<a href="#">配件</a> /<a href="#">用品</a></li>
-                        <li class="yellow"><i class="icon">&#xe614;</i><a href="#">家纺</a> /<a href="#">家饰</a> /<a href="#">鲜花</a></li>
-                        <li class="green"><i class="icon">&#xe616;</i><a href="#">医药保健</a></li>
-                        <li class="red"><i class="icon">&#xe615;</i><a href="#">厨具</a> /<a href="#">收纳</a> /<a href="#">宠物</a></li>
-                        <li class="green"><i class="icon">&#xe617;</i><a href="#">图书音像</a></li>
-                    </ul>
+                <div class="left_menu">
+                    <div class="menu">
+                        <ul>
+                            <li class="pink"><i class="icon">&#xe60d;</i><a href="#">女装</a> /<a href="#">内衣</a></li>
+                            <li class="blue"><i class="icon">&#xe618;</i><a href="#">男装</a> /<a href="#">运动户外</a></li>
+                            <li class="purple"><i class="icon">&#xe619;</i><a href="#">女鞋</a> /<a href="#">男鞋</a> /<a href="#">箱包</a></li>
+                            <li class="pink"><i class="icon">&#xe60f;</i><a href="#">美妆</a> /<a href="#">个人护理</a></li>
+                            <li class="purple"><i class="icon">&#xe606;</i><a href="#">腕表</a> /<a href="#">眼镜</a> /<a href="#">珠宝饰品</a></li>
+                            <li class="blue"><i class="icon">&#xe60b;</i><a href="#">手机</a> /<a href="#">数码</a> /<a href="#">电脑办公</a></li>
+                            <li class="pink_red"><i class="icon">&#xe60a;</i><a href="#">母婴玩具</a></li>
+                            <li class="yellow"><i class="icon">&#xe609;</i><a href="#">零食</a> /<a href="#">茶酒</a> /<a href="#">进口食品</a></li>
+                            <li class="yellow"><i class="icon">&#xe63f;</i><a href="#">生鲜水果</a></li>
+                            <li class="blue"><i class="icon">&#xe608;</i><a href="#">大家电</a> /<a href="#">生活电器</a></li>
+                            <li class="red"><i class="icon">&#xe607;</i><a href="#">家具建材</a></li>
+                            <li class="blue"><i class="icon">&#xe613;</i><a href="#">汽车</a> /<a href="#">配件</a> /<a href="#">用品</a></li>
+                            <li class="yellow"><i class="icon">&#xe614;</i><a href="#">家纺</a> /<a href="#">家饰</a> /<a href="#">鲜花</a></li>
+                            <li class="green"><i class="icon">&#xe616;</i><a href="#">医药保健</a></li>
+                            <li class="red"><i class="icon">&#xe615;</i><a href="#">厨具</a> /<a href="#">收纳</a> /<a href="#">宠物</a></li>
+                            <li class="green"><i class="icon">&#xe617;</i><a href="#">图书音像</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
                 
             </div>
 
