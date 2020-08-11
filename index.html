@@ -2220,7 +2220,6 @@
             
         window.onscroll=function(){
             var top = docEl.scrollTop;
-            //数值500和650 根据自己的滚动页面显示情况调节
             stickyTopnav.classList[top>=800?'add':'remove']('open');
             stickySidenav.classList[top>=650?'add':'remove']('open');
         }
