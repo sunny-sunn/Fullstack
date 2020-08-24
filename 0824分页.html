@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    button {
+      font-family: inherit;
+    }
+  
+    button.active {
+      color: red;
+    }
+  </style>
+
+	</head>
+	<body>
+
+    <h1>学生成绩表</h1>
+    
+    <p>
+      <button onclick="add()">添加成绩</button>
+    </p>
+    
+    <table border="1" cellspacing="0" cellpadding="8" width="500">
+      <thead>
+        <tr>
+          <th>序号</th>
+          <th>姓名</th>
+          <th>得分</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    
+    </table>
+
+    <div id="btn"></div>
+		
+    <script>
+      var grade = [
+        { name: '张三', score: 75 },
+        { name: '李四', score: 80 },
+        { name: '王五', score: 90 },
+        { name: '刘梅', score: 90 },
+        { name: '王五', score: 90 },
+      ];
+
+      list();
+
+      function list() {
+        var temp = '';
+        for (var i = 0; i < grade.length; i++) {
+          temp += '<tr>\
+    					<td>'+ (i + 1) + '</td>\
+    					<td>'+ grade[i].name + '</td>\
+    					<td>'+ grade[i].score + '</td>\
+              <td>'+ '<button onclick=del()>删除</button>' + '</td>\
+    				</tr>';
+        }
+        document.getElementById('tbody').innerHTML = temp;
+      }
+
+      function add() {
+        grade.push({
+          name: prompt('姓名'),
+          score: prompt('得分'),
+        });
+
+        list();
+        pager(1);
+      }
+
+      // 分页
+      pager(1);
+      function pager(page) {
+        var perpage = 2;
+        var total = grade.length;
+        var totalPage = Math.ceil(total / perpage);
+        var start = (page - 1) * perpage;
+        var end = start + perpage;
+        var data = grade.slice(start, end);
+
+        var listTemp = '';
+        for (var i = 0; i < data.length; i++) {
+          listTemp += '<tr>\
+    					<td>'+ (i + 1) + '</td>\
+    					<td>'+ data[i].name + '</td>\
+    					<td>'+ data[i].score + '</td>\
+              <td>'+ '<button onclick=del()>删除</button>' + '</td>\
+    				</tr>';
+        }
+        list();
+        document.getElementById('tbody').innerHTML = listTemp;
+
+        var pageTemp = '';
+        if (page > 1) {
+          pageTemp = '<button onclick="pager(' + (page - 1) + ')">上页</button>';
+        }
+        for (var p = 1; p <= totalPage; p++) {
+          var activeClass = (p === page ? 'active' : '');
+          pageTemp += '<button class="' + activeClass + '" onclick="pager(' + p + ')">' + p + '</button>';
+        }
+        if (page < totalPage) {
+          pageTemp += '<button onclick="pager(' + (page + 1) + ')">下页</button>';
+        }
+        document.getElementById('btn').innerHTML = pageTemp;
+      }
+
+      // 删除
+      function del(i) {
+        if (confirm('您确定要删除此项吗？')) {
+          grade.splice(i, 1);
+          pager(1);
+      }
+  }
+
+    </script>
+  </body>
+</html>
