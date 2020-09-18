@@ -18,6 +18,8 @@
     <button onclick="low()">最低分</button>
     <button onclick="avg()">平均分</button>
     <button onclick="pass()">及格人数</button>
+    <button onclick="batchDel()">批量删除</button>
+    <input oninput="search(this)" placeholder="请输入关键字">
   </p>
 
   <table border="1" cellspacing="0" cellpadding="8" width="500">
@@ -40,20 +42,26 @@
     var sites = [
       { stuName: '张三', stuGrade: 75 },
       { stuName: '李四', stuGrade: 80 },
+      { stuName: '张四', stuGrade: 75 },
+      { stuName: '李五', stuGrade: 80 },
+      { stuName: '张五', stuGrade: 75 },
+      { stuName: '李六', stuGrade: 80 },
+      { stuName: '张六', stuGrade: 75 },
+      { stuName: '李七', stuGrade: 80 },
     ];
 
-    function list() {
+    function list(arr) {
       var temp = '';
-      for (var i = 0; i < sites.length; i++) {
+      for (var i = 0; i < arr.length; i++) {
         temp += '<tr>\
-        <td>'+ (i+1) + '</td>\
-        <td>'+ sites[i].stuName + '</td>\
-        <td>'+ sites[i].stuGrade + '</td>\
+        <td>'+ (i + 1) + '</td>\
+        <td>'+ arr[i].stuName + '</td>\
+        <td>'+ arr[i].stuGrade + '</td>\
         </tr>';
       }
       document.getElementById('tbody').innerHTML = temp;
     }
-    list();
+    list(sites);
 
     // 添加成绩
     function add() {
@@ -63,7 +71,7 @@
         stuName: stuName,
         stuGrade: Number(stuGrade),
       });
-      list();
+      list(sites);
     }
 
     // 分数排序
@@ -80,7 +88,7 @@
           }
         }
       }
-      list();
+      list(sites);
     }
 
     // 最高分
@@ -124,6 +132,27 @@
         }
       }
       alert('及格人数：' + str);
+    }
+
+    // 批量删除
+    function batchDel() {
+      var ids = prompt('请输入名称');
+      ids = ids.split(',');
+      sites = sites.filter(function (item) {
+        return !ids.includes(String(item.stuName));
+      })
+
+      list(sites);
+    }
+
+    // 搜索
+    function search(input) {
+      var keyword = input.value.trim();
+      var result = sites.filter(function (item) {
+        return item.stuName.indexOf(keyword) !== -1 ||
+          String(item.stuGrade).indexOf(keyword) !== -1;
+      })
+      list(result);
     }
 
   </script>
